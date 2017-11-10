@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WhereMeeting
 {
-    public partial class Form1 : Form
+    public partial class Error : Form
     {
-        public Form1()
+        public Error()
         {
             InitializeComponent();
         }

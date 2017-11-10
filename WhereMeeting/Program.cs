@@ -16,7 +16,14 @@ namespace WhereMeeting
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Console.WriteLine("UserName: {0} UserDomain: {1}", Environment.UserName, Environment.UserDomainName);
+            if ("FAREAST".Equals(Environment.UserDomainName))
+            {
+                Application.Run(new Home());
+            } else
+            {
+                Application.Run(new Error());
+            }
         }
     }
 }
